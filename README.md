@@ -2,6 +2,8 @@
 
 This project presents a cohort analysis focused on user retention over time. It is an improved version of an earlier project, enhanced with clearer visualizations, additional metrics, and better structured code for clarity and interpretability.
 
+---
+
 > ⚠️ This project is an improved version of a previously published cohort analysis. The visuals and analysis have been refined to better demonstrate retention behavior and interpret results effectively.
 
 ---
