@@ -1,36 +1,48 @@
-# Cohort-analysis
+# Cohort Analysis of User Retention
 
-## Overview
-This project performs **Cohort Analysis** on the **ecommerce_customer dataset** using Python. Cohort analysis is a powerful method to analyze customer behavior over time. In this analysis, customers are grouped by their first purchase month in **2023**, and additional segmentation is performed by **age** and **gender**. This provides insights into customer spending trends and patterns across different demographics.
+This project presents a cohort analysis focused on user retention over time. It is an improved version of an earlier project, enhanced with clearer visualizations, additional metrics, and better structured code for clarity and interpretability.
 
-## Key Features
-1. **Dataset**
-   - Contains customer transaction data, including:
-     - Customer ID
-     - Purchase date
-     - Product category
-     - Product price
-     - Quantity
-     - Total Purchase Amount
-     - Payment Method
-     - Customer Age
-     - Returns
-     - Customer Name
-     - Gender
-     - 	Churn
-2. **Cohort Analysis**
-   - Calculated the total sum spent by each cohort on a monthly basis.
-   - Segmented spending data by **age groups** and **gender** to identify key trends.
-3. **Visualization**:
-   - Monthly total spending for each cohort as a heatmap.
-   - Spending trends for **age groups** and **gender groups** visualized separately by month.
+> ⚠️ This project is an improved version of a previously published cohort analysis. The visuals and analysis have been refined to better demonstrate retention behavior and interpret results effectively.
 
 ---
 
+## Overview
+
+The goal of this analysis is to understand how user retention varies depending on when users first joined (the cohort), and how well different cohorts are retained over time.
+
+Key steps in this project:
+1. **Data Cleaning & Preparation**
+   - Parsing dates and standardizing formats.
+   - Removing anomalies and duplicates.
+2. **Cohort Labelling**
+   - Assigning users to cohorts based on their first purchase month.
+3. **Retention Matrix Creation**
+   - Calculating monthly retention rates for each cohort.
+4. **Visualizations**
+   - Line chart showing retention across months for each cohort.
+   - Bar plot showing 1-month retention rate by cohort.
+
+## Visualizations
+
+### Retention Line Chart
+A line plot showing how retention changes over time for each of the cohorts. Helps identify trends and differences in user behavior.
+
+### 1-Month Retention Bar Plot
+A bar chart showing the percentage of users retained after the first month, by cohort. This helps compare initial stickiness between different user groups.
+
+## Insights
+- Earlier cohorts tend to show slightly better retention, possibly due to lower competition or stronger onboarding.
+- Some cohorts show sharp drop-off after the first month, highlighting a potential need for better user engagement early in the lifecycle.
+
 ## Technologies Used
-- **Python** for data manipulation, analysis, and visualization.
-- **Jupyter Notebook** for organizing analysis.
-- **Libraries**:
-  - `pandas` for data wrangling and cohort calculations.
-  - `numpy` for numerical computations.
-  - `matplotlib` and `seaborn` for visualizations.
+- **Python** (data analysis)
+- **Pandas** (data manipulation)
+- **Matplotlib** & **Seaborn** (visualization)
+- **Jupyter Notebook** (documentation and analysis)
+
+## Dataset
+The dataset is a synthetic transactional dataset, where each row represents a user's purchase activity, including user ID and purchase date.
+
+---
+
+
